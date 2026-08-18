@@ -14,7 +14,7 @@
      
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="index.html">BIBLIOMUSICA</a> 
+    <a class="navbar-brand" href="index.html">BIBLIOMUSICA</a><
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -47,9 +47,17 @@
         de clasicos como PINK FLOYD a la actualidad con MILO J
     </p>
     </div>
+    <div id="Precio dolar"> </div>
     
 <script>
-    console.log("Hola Cote")
+    console.log("Hola Cote que tal")
+    fetch('https://cl.dolarapi.com/v1/cotizaciones/usd')
+    .then(response=>response.json())
+    .then(datos=>{
+      console.log(datos);
+    })
+    document.getElementById("Precio dolar")
+    
 </script>
 
 </body>

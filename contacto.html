@@ -41,9 +41,74 @@
     <h1>Contactanos a nuestro email</h1>
     <a href="https://maps.app.goo.gl/EWUxiPj6vGfA7LLq8" 
     target="_blank" rel="noopener noreferrer">
-     <img src="img/link.webp" alt="Nuesra oficina" height="350" width="400"> </a>
+     <img src="img/imagesmascotas.jpg" alt="Nuesra oficina" height="350" width="400"> </a>
     <br>
-   
+
+    <div class="container my-5">
+  <div class="row justify-content-center">
+    <!-- Fijamos un ancho máximo responsivo con col-md-8 o col-lg-6 -->
+    <div class="col-12 col-md-8 col-lg-6">
+      
+      <!-- Agregamos bg-white, padding (p-4), bordes redondeados (rounded-3) y sombra (shadow) -->
+      <form class="bg-white p-4 p-md-5 rounded-3 shadow">
+        
+        <h3 class="mb-4 text-center fw-bold">Registro Mascota</h3>
+
+        <div class="mb-3">
+          <label for="nombreUsuario" class="form-label">Nombre Responsable a Cargo</label>
+          <input type="text" class="form-control" id="nombreUsuario">
+        </div>
+
+        <div class="mb-3">
+          <label for="nombreMascota" class="form-label">Nombre Mascota</label>
+          <input type="text" class="form-control" id="nombreMascota">
+        </div>
+
+        <!-- Cambiado type="number" por type="text" para permitir calles y números -->
+        <div class="mb-3">
+          <label for="direccionUsuario" class="form-label">Dirección Responsable a cargo</label>
+          <input type="text" class="form-control" id="direccionUsuario">
+        </div>
+
+        <div class="mb-3">
+          <label for="telefonoUsuario" class="form-label">Número Teléfono Responsable a cargo</label>
+          <input type="tel" class="form-control" id="telefonoUsuario">
+        </div>
+
+        <div class="mb-3">
+          <label for="ChipMascota" class="form-label">Número Chip Mascota</label>
+          <input type="text" class="form-control" id="ChipMascota">
+        </div>
+
+        <!-- Agregado step="0.01" para permitir decimales en el peso -->
+        <div class="mb-3">
+          <label for="pesoMascota" class="form-label">Peso Mascota (kg)</label>
+          <input type="number" step="0.01" class="form-control" id="pesoMascota">
+        </div>
+
+        <div class="mb-3">
+          <label for="razaMascota" class="form-label">Raza Mascota</label>
+          <input type="text" class="form-control" id="razaMascota">
+        </div>
+
+        <div class="mb-3">
+          <label for="descripcionEnfermedad" class="form-label">Descripción Enfermedad</label>
+          <textarea class="form-control" id="descripcionEnfermedad" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Acepto los términos y condiciones</label>
+        </div>
+
+        <div class="d-grid">
+          <button type="submit" class="btn btn-primary btn-lg">Guardar Registro</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>
